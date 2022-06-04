@@ -17,24 +17,25 @@ class Stack{
     peek(){
         return this.stack[this.length-1]
     }
-    // print(){
-    //     console.log(this.length)
+    print(){
+        console.log(this.stack)
 
-    // }
+    }
         
     
 
 }
 
 let s1= new Stack()
-Stack.prototype.print=function(){
-    console.log(this.length)
-}
+// Stack.prototype.print=function(){
+//     console.log(this.stack)
+// }
 s1.push(1)
 s1.push(2)
-s1.push(3)
+s1.push(10)
 console.log(s1)
-// console.log(s1.length)
-// console.log(s1.peek())
-// s1.pop()
-// console.log(s1)
+console.log(s1.stack)
+console.log(s1.length)
+console.log(s1.peek())
+s1.pop()
+console.log(s1)
